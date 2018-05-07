@@ -1,0 +1,26 @@
+{
+  "name": "lengai/geetest",
+  "description": "thinkphp5 geetest",
+  "type": "think-extend",
+  "authors": [
+    {
+      "name": "lengai",
+      "email": "371522155@qq.com"
+    }
+  ],
+  "license": "MIT",
+  "require": {
+    "topthink/think-helper": ">=1.0.4",
+    "topthink/think-installer": "~1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Captcha\\Lib\\": "src/lib/"
+    }
+  },
+  "extra": {
+    "think-config": {
+      "geetest": "src/config.php"
+    }
+  }
+}
