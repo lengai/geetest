@@ -16,7 +16,10 @@
   "autoload": {
     "psr-4": {
       "Captcha\\Lib\\": "src/lib/"
-    }
+    },
+    "files": [
+      "src/lib/func.php"
+    ]
   },
   "extra": {
     "think-config": {
