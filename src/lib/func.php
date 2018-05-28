@@ -22,8 +22,8 @@ const VERFY_TYPE_ACTIVE = 1;
 function geetest_check($geetest_challenge, $geetest_validate, $geetest_seccode, $type = VERFY_TYPE_ACTIVE, $data = null)
 {
 
-    $captcha_id = Config::get('captcha_id');
-    $private_key = Config::get('private_key');
+    $captcha_id = Config::get('geetest.captcha_id');
+    $private_key = Config::get('geetest.private_key');
     $geetest = new GeetestLib($captcha_id, $private_key);
     if ($type == VERFY_TYPE_ACTIVE) {
         $result = $geetest->success_validate($geetest_challenge, $geetest_validate, $geetest_seccode, $data);
